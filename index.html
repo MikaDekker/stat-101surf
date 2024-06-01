@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Surf</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="1YHdmYjEM64iJdqcfT5WdnlHmtJiaqe6p8aYhP76rm-cLvbLrbVOYJ3fWN5qzy63dJHsg-wqt_ckU2dlxRis1Q" />
+    
+    <link rel="stylesheet" href="assets/application-2d6d4f35bc0c8c568dba3309dcc0c4bfab3b08bb394c4e1b2a04328538603197.css" data-turbo-track="reload" />
+    <script type="importmap" data-turbo-track="reload">{
+  "imports": {
+    "application": "/assets/application-f3e871e7be89ccb0adccd09d1fb0f2c5f0583d0626142906e3b227e5641284be.js",
+    "@hotwired/turbo-rails": "/assets/turbo.min-918a6cf2f2be8ed9555c9a11eee69c7dc2f01770802815576efc931876b327fb.js",
+    "@hotwired/stimulus": "/assets/stimulus.min-dd364f16ec9504dfb72672295637a1c8838773b01c0b441bd41008124c407894.js",
+    "@hotwired/stimulus-loading": "/assets/stimulus-loading-3576ce92b149ad5d6959438c6f291e2426c86df3b874c525b30faad51b0d96b3.js",
+    "bootstrap": "/assets/bootstrap.min-158d51560e04dda7c718c1c8f31e72d6c2eef7028a80a158043380b15e6b5aef.js",
+    "controllers/application": "/assets/controllers/application-368d98631bccbf2349e0d4f8269afb3fe9625118341966de054759d96ea86c7e.js",
+    "controllers/hello_controller": "/assets/controllers/hello_controller-549135e8e7c683a538c3d6d517339ba470fcfb79d62f738a0a089ba41851a554.js",
+    "controllers": "/assets/controllers/index-2db729dddcc5b979110e98de4b6720f83f91a123172e87281d5a58410fc43806.js"
+  }
+}</script>
+<link rel="modulepreload" href="assets/application-f3e871e7be89ccb0adccd09d1fb0f2c5f0583d0626142906e3b227e5641284be.js">
+<link rel="modulepreload" href="assets/turbo.min-918a6cf2f2be8ed9555c9a11eee69c7dc2f01770802815576efc931876b327fb.js">
+<link rel="modulepreload" href="assets/stimulus.min-dd364f16ec9504dfb72672295637a1c8838773b01c0b441bd41008124c407894.js">
+<link rel="modulepreload" href="assets/stimulus-loading-3576ce92b149ad5d6959438c6f291e2426c86df3b874c525b30faad51b0d96b3.js">
+<link rel="modulepreload" href="assets/bootstrap.min-158d51560e04dda7c718c1c8f31e72d6c2eef7028a80a158043380b15e6b5aef.js">
+<link rel="modulepreload" href="assets/controllers/application-368d98631bccbf2349e0d4f8269afb3fe9625118341966de054759d96ea86c7e.js">
+<link rel="modulepreload" href="assets/controllers/hello_controller-549135e8e7c683a538c3d6d517339ba470fcfb79d62f738a0a089ba41851a554.js">
+<link rel="modulepreload" href="assets/controllers/index-2db729dddcc5b979110e98de4b6720f83f91a123172e87281d5a58410fc43806.js">
+<script type="module">import "application"</script>
+  </head>
+  <body>
+    <nav id="navbar">
+  <div class="container">
+    <ul>
+      <li>
+        <a href="index.html">HOME</a>
+      </li>
+      <li>
+        <a href="pages/shop.html">SHOP</a>
+      </li>
+      <li>
+        <a href="pages/contact.html">SURF</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+    <div class="header">
+  <div class="inner-header block">
+    <path fill="#FFFFFF" stroke="#000000" stroke-width="10" stroke-miterlimit="10" d="M57,283" />
+    <g>
+      <path fill="#fff" d="M250.4,0.8C112.7,0.8,1,112.4,1,250.2c0,137.7,111.7,249.4,249.4,249.4c137.7,0,249.4-111.7,249.4-249.4
+C499.8,112.4,388.1,0.8,250.4,0.8z M383.8,326.3c-62,0-101.4-14.1-117.6-46.3c-17.1-34.1-2.3-75.4,13.2-104.1
+c-22.4,3-38.4,9.2-47.8,18.3c-11.2,10.9-13.6,26.7-16.3,45c-3.1,20.8-6.6,44.4-25.3,62.4c-19.8,19.1-51.6,26.9-100.2,24.6l1.8-39.7    c35.9,1.6,59.7-2.9,70.8-13.6c8.9-8.6,11.1-22.9,13.5-39.6c6.3-42,14.8-99.4,141.4-99.4h41L333,166c-12.6,16-45.4,68.2-31.2,96.2  c9.2,18.3,41.5,25.6,91.2,24.2l1.1,39.8C390.5,326.2,387.1,326.3,383.8,326.3z" />
+    </g>
+    <img class="board" src="assets/Paddle919.png" alt="">
+  </div>
+  <div>
+    <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+      <defs>
+        <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+      </defs>
+      <g class="parallax">
+        <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+        <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+        <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+        <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+      </g>
+    </svg>
+  </div>
+  <div class="services">
+    <div class="head">
+      <h1 class="section-header">What I do</h1>
+    </div>
+    <div class="container-home">
+      <div class="easy-grid">
+          <div class="example-block">
+              <div class="block-heading">
+                <h2 class="card-head d-flex">Surf Lessons</h2>
+              </div>
+              <br>
+              <hr>
+              <br>
+              <h4 class="price">R <span class="price-span">350</span> <span class="time-span">/hr</span></h4>
+              <br>
+              <br>
+              <h4 class="price">
+                <button>
+                  <a href="pages/contact.html">BOOK NOW</a>
+                </button>
+              </h4>
+              <br>
+              <br>
+              <div class="block-list d-block">
+                <div class="d-flex">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"/></svg>
+                  <p class="px-2">Board</p>
+                </div>
+                <div class="d-flex">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"/></svg>
+                  <p class="px-2">Wetsuit</p>
+                </div>
+                <div class="d-flex">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"/></svg>
+                  <p class="px-2">Lesson</p>
+                </div>
+              </div>
+          </div>
+        <br>
+        <br>
+          <div class="example-block">
+              <div class="block-heading">
+                <h2 class="card-head d-flex">Board Rental</h2>
+              </div>
+              <br>
+              <hr>
+              <br>
+              <h4 class="price">R <span class="price-span">150</span> <span class="time-span">/hr</span></h4>
+              <br>
+              <br>
+              <h4 class="price">
+                <button>
+                  <a href="pages/contact.html">BOOK NOW</a>
+                </button>
+              </h4>
+              <br>
+              <br>
+              <div class="block-list d-block">
+                <div class="d-flex">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"/></svg>
+                  <p class="px-2">Board</p>
+                </div>
+              </div>
+          </div>
+        <br>
+        <br>
+          <div class="example-block">
+              <div class="block-heading">
+                <h2 class="card-head d-flex">Other</h2>
+              </div>
+              <br>
+              <hr>
+              <br>
+              <h4 class="price"><span class="price-span">view</span> <span class="time-span">↓</span></h4>
+              <br>
+              <br>
+              <h4 class="price">
+                <button>
+                  <a href="pages/shop.html">SHOP</a>
+                </button>
+              </h4>
+              <br>
+              <br>
+              <div class="block-list d-block">
+                <div class="d-flex">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"/></svg>
+                  <p class="px-2">Board repair</p>
+                </div>
+                <div class="d-flex">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"/></svg>
+                  <p class="px-2">Clothing</p>
+                </div>
+                <div class="d-flex">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"/></svg>
+                  <p class="px-2">Wax</p>
+                </div>
+                 <div class="d-flex">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"/></svg>
+                  <p class="px-2">Leashes</p>
+                </div>
+                 <div class="d-flex">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"/></svg>
+                  <p class="px-2">Rash vests</p>
+                </div>
+              </div>
+          </div>
+      </div>
+    </div>
+    <div class="book">
+    </div>
+  </div>
+</div>
+
+    <footer>
+    <h6 class="footer-text fw-light">© 101 Surfing</h6>
+</footer>
+
+  </body>
+</html>
